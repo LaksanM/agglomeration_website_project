@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/header.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/encode-sans" rel="stylesheet">
+
+</head>
+<body>
+    <header></header>
+    <div class="container_box">
+        <div class="container_contact">
+            <p class="conctactez-nous">
+                Contactez-nous
+            </p>
+            <p class="text_contact">
+                Nom
+            </p>
+            <input class="text_contact" id="nom" placeholder="Entrez votre nom...">
+
+            <p class="text_contact">
+                Prenom
+            </p>
+            <input class="text_contact" id="prenom" placeholder="Entrez votre prénom...">
+
+            <p class="text_contact">
+                Email
+            </p>
+            <input class="text_contact" id="email" placeholder="Entrez votre email...">
+
+            <p class="text_contact">
+                Selectionnez votre service
+            </p>
+            <select id="service">
+                <option value="select", disabled selected>Veuillez sélectionner un service</option>
+                <option value="environnement">Environnement</option>
+                <option value="transport">Transport</option>
+                <option value="tourisme">Tourisme</option>
+            </select>
+
+            <p class="text_contact">
+                    Message
+            </p>
+            <textarea id="message" placeholder="Décrivez votre message..." style="height:65px"></textarea>
+
+            <button class="envoyer" value="Envoyer">
+                <strong>Envoyer</strong>
+            </button>
+
+        </div>
+        <div class="container_info">
+            <form class="form_box_info">
+                <p class ="info_sup">
+                    Information supplémentaire
+                </p>
+                <p class="info">
+                Vous recherchez une <strong>information ou un interlocuteur</strong> à l’Agglo ?
+                <br>Contactez nos services qui sont à votre disposition au <strong>0590 99 63 20</strong> du lundi au vendredi, de 8h00 à 14h30.
+                <br>    
+                <br>Pour <strong>nous rendre visite</strong> : Grand Sud Caraïbe 12 rue Bébian 97100 Basse-Terre, du lundi au vendredi, de 8h00 à 14h00.
+                <br>    
+                <br>Pour <strong>nous écrire</strong> : Communauté d’Agglomération Grand Sud Caraïbe 12 rue Bébian 97100 Basse-Terre. 
+                </p>
+                <div class="map_box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.77108968641!2d-61.70252942416146!3d16.02542744060767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c135fe1da129787%3A0xcde6be65f109ec63!2sRue%20Victor%20Schoelcher%2C%20Saint-Claude%2097120%2C%20Guadeloupe!5e0!3m2!1sfr!2sfr!4v1696320414603!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </form>
+        </div>   
+    </div>
+    <footer></footer>
+</body>
+</html>
+

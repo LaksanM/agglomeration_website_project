@@ -1,0 +1,133 @@
+/* Page de contact */
+.container_box {
+    font-family: encode-sans;
+    display: flex; /* Flexbox */
+    flex-direction: row; /* Mettre en ligne */
+    margin: auto; /* Centrer */
+    width: 90%;
+    height: 100%;
+    margin-top: 5%; /* Espacement du header */
+    margin-bottom: 5%; /* Espacement du footer */
+}
+
+.container_contact {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px; /* Ombre */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Mettre en colonne */
+    height: 100%;
+    width: 35%;
+}
+
+.conctactez-nous{
+    color: #000;
+    font-size: 35px;
+    font-weight: 600; /* Epaisseur */
+    padding-top: 8%; /* Espacement du haut */
+    padding-bottom: 5%; /* Espacement du bas */
+    padding-left: 10%; /* Espacement à gauche */
+}
+
+.text_contact{
+    padding-left: 10%; /* Texte espacement à gauche */
+}
+
+input[class=text_contact], select, textarea {
+    width: 85%; /* Largeur des inputs */
+    margin: auto; /* Centre l'élément */
+    border: 1% solid #eeeeee; /* Contour des inputs */
+    padding: 3%; /* Hauteur des inputs */
+    margin-top: 2%; /* Espacement du haut */
+    margin-bottom: 4%; /* Espacement du bas */
+    resize: none; /* Non redimensionner textarea */
+}
+
+.envoyer {
+    background-color: #005A8F;
+    color: white;
+    width: 85%; /* Largeur du boutton */
+    margin: auto; /* Centre l'élément */
+    margin-top: 3%; /* Espacement du haut */
+    margin-bottom: 8%; /* Espacement du bas */
+    padding: 3%; /* Hauteur du boutton */
+    border-radius: 20px; /* Arrondissement */
+    border: 0px;
+}
+
+.envoyer:hover{
+    background-color: #4399CC;
+}
+
+
+
+.container_info {
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Mettre en colonne */
+    width: 65%;
+    height: 100%;
+}
+
+.form_box_info {
+    margin-left: 6%; /* Espacement à gauche */
+}
+
+.info_sup {
+    color: #005A8F;
+    font-size: 25px;
+    font-weight: 600; /* Epaisseur */
+    padding-bottom: 3%; /* Espacement du bas */
+}
+
+.info {
+    font-size: 13px;
+}
+
+.map_box {
+    margin-top: 3%;
+    overflow:hidden;
+    padding-bottom: 57.5%;
+    position:relative;
+    border: 2px solid #005A8F;
+    height:0;
+}
+
+.map_box iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+@media only screen and (max-width: 768px) { /* Responsive appareil mobile */
+    .container_box {
+        flex-direction: column; /* Changer en colonne pour les écrans étroits */
+        height: 100%;
+        width: 100%;
+    }
+
+    .container_contact {
+        width: 90%;
+        margin: auto; /* Centrer */
+    }
+
+    input[class=text_contact], select, textarea {
+        width: 85%;
+    }
+
+    .envoyer {
+        width: 85%;
+    }
+
+
+
+    .container_info {
+        width: 90%;
+        margin: auto; /* Centrer */
+    }
+    
+    .form_box_info {
+        margin-left: 0px; /* Deplace pas la box */
+        padding-top: 3%;
+    }
+}

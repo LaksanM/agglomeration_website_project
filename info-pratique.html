@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta nom="viewport" content="width=device-width, initial-scale=1">
+    <title>Information Pratique</title>
+    <link rel="stylesheet" href="info-pratique.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="js/header.js"></script>
+
+</head>
+
+<script>
+    //____________Debut JS deS Card__________ 
+$(document).ready(function(){
+        // owl carousel script
+        $('.carousel').owlCarousel({
+            margin: 20,
+            loop: true,
+            autoplay: true,
+            autoplayTimeOut: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0:{
+                    items: 1,
+                    nav: false
+                },
+                600:{
+                    items: 2,
+                    nav: false
+                },
+                1000:{
+                    items: 3,
+                    nav: false
+                }
+            }
+        });
+        $(".question-reponse").click(function() {
+        $(this).toggleClass("active");
+        });
+        
+});
+//____________Fin JS des card__________ 
+
+//____________Debut JS de la FAQ__________ 
+const questions = document.querySelectorAll('.question-answer');
+    
+    questions.forEach(function(question) {
+        const btn = question.querySelector('.question-btn');
+        btn.addEventListener("click", function() {
+            questions.forEach(function(item) {
+                if (item !== question) {
+                    item.classList.remove("show-text");
+                }
+            })
+            question.classList.toggle("show-text");
+        })
+    })
+    
+    //____________Fin JS de la FAQ__________ 
+</script>
+
+
+<body>
+    <header></header>
+
+<!-----------Debut Card----------->
+ <section class="info" id="info">
+    <div class="container">
+        <h2 class="titre">Informations Pratique</h2>
+        <div class="carousel owl-carousel">
+            <a href="">
+                <div class="card">
+                    <div class="box">
+                        <img src="img/info-pratique/card1.png" class="card-img-top" alt="">
+                        <div class="text">Mes démarches en ligne</div>
+                        <p> Une demande de branchement ou encore une modification de vos coordonnées, le tout depuis chez vous.</p>
+                    </div>
+                </div>
+                </a>
+            <a href="">
+                <div class="card">
+                    <div class="box" >
+                        <img src="img/info-pratique/card2.jpg" alt="">
+                        <div class="text">Tarifs et règlements </div>
+                        <p>Téléchargez les règlement de service et consultez les tarifs Eau & Assainissement de votre commune.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="card">
+                    <div class="box">
+                        <img src="img/info-pratique/card3.webp" alt="">
+                        <div class="text">Conseil d'exploitation</div>
+                        <p>Le conseil d'exploitation joue un rôle clé dans la gestion des affaires de la Régie et est consulté sur divers aspects.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="card">
+                    <div class="box">
+                        <img src="img/info-pratique/card4.webp" alt="">
+                        <div class="text">Comment lire mon compteur?</div>
+                        <p>Faire une relève à distance et vous évite d'être présent lors du relevé de votre compteur.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-----------Debut FAQ----------->
+
+<section class="faq" id="faq">
+<div class="container">
+    <h1 class="titre"> Foire Aux Questions</h1>
+    <main class="accordion">
+        <div class="faq-img">
+            <img src="img/info-pratique/faq.png" alt="" class="accordion-img">
+        </div>
+        <div class="content-accordion">
+            <div class="question-reponse">
+                <div class="question">
+                    <h3 class="titre-question">"Comment puis-je obtenir un acte de naissance ?" </h3>
+                    <button class="question-btn">
+                        <span class="up-icon">
+                            <i class="fas fa-chevron-up"></i>
+                        </span>
+                        <span class="down-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="reponse">
+                    <p>Vous pouvez obtenir un acte de naissance en vous rendant au service de l'état civil de la mairie, en ligne sur notre site web ou en le demandant par courrier en fournissant les informations nécessaires.</p>
+                </div>
+            </div>
+            <div class="question-reponse">
+                <div class="question">
+                    <h3 class="titre-question"> "Comment signaler un problème de voirie, comme un nid-de-poule ?"</h3>
+                    <button class="question-btn">
+                        <span class="up-icon">
+                            <i class="fas fa-chevron-up"></i>
+                        </span>
+                        <span class="down-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="reponse">
+                    <p>Vous pouvez signaler un problème de voirie en contactant notre service des travaux publics ou en utilisant notre application mobile dédiée.</p>
+                </div>
+            </div>
+            <div class="question-reponse">
+                <div class="question">
+                    <h3 class="titre-question">"Comment puis-je m'inscrire sur les listes électorales ?"</h3>
+                    <button class="question-btn">
+                        <span class="up-icon">
+                            <i class="fas fa-chevron-up"></i>
+                        </span>
+                        <span class="down-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="reponse">
+                    <p>Pour vous inscrire sur les listes électorales, vous pouvez remplir un formulaire d'inscription en ligne sur notre site web ou vous rendre au service des élections en mairie avec les documents requis.</p>
+                </div>
+            </div>
+            <div class="question-reponse">
+                <div class="question">
+                    <h3 class="titre-question">"Où puis-je obtenir des informations sur les événements locaux et les activités communautaires ?"</h3>
+                    <button class="question-btn">
+                        <span class="up-icon">
+                            <i class="fas fa-chevron-up"></i>
+                        </span>
+                        <span class="down-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="reponse">
+                    <p>Vous pouvez trouver des informations sur les événements et les activités locaux en consultant notre site web, en vous abonnant à notre newsletter, ou en visitant le panneau d'affichage communautaire devant la mairie. </p>
+                </div>
+            </div>
+            <div class="question-reponse">
+                <div class="question">
+                    <h3 class="titre-question">"Comment obtenir un certificat de résidence ?"</h3>
+                    <button class="question-btn">
+                        <span class="up-icon">
+                            <i class="fas fa-chevron-up"></i>
+                        </span>
+                        <span class="down-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="reponse">
+                    <p>Pour obtenir un certificat de résidence, vous pouvez vous rendre au service des affaires administratives de la mairie pendant les heures d'ouverture ou faire une demande en ligne sur notre site web. Vous devrez fournir une preuve de résidence, telle qu'une facture récente d'électricité ou de gaz, ainsi qu'une pièce d'identité.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+</section>
+
+
+
+<!-----------Debut Com----------->
+<section class="com" id="com">
+    <div class="container">
+        <h2 class="titre">Autres Questions ?</h2>
+        <div class="com-content">
+            <div class="column center">
+                <div class="text">Commentaire</div>
+                <form action="#">
+                    <div class="cases">
+                        <div class="case nom">
+                            <input type="text" placeholder="Nom" required>
+                        </div>
+                        <div class="case email">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <input type="text" placeholder="Sujet" required>
+                    </div>
+                    <div class="case textarea">
+                        <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                    </div>
+                    <div class="button-area">
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer></footer>
+
+</body>
+</html>

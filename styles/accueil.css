@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+/* slide */
+
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+  text-align: center;
+}
+
+.slide {
+  width: 100%;
+  max-height: 750px;
+  display: flex;
+}
+
+.slideshow-container img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
+}
+
+.slideshow-container img:first-child{
+  display: block;
+}
+
+/* losange */
+.losange-main{
+  margin-top: 5%;
+  margin-bottom: 4%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.losange {
+  background-color: #D9D9D9;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.losange img {
+  max-width: 81%;
+  max-height: 100%;
+  transform: rotate(45deg);
+}
+
+.losange-text{
+  margin-top: 50%;
+  text-align: center;
+}
+.losange-text p {
+  font-size: 25px;
+  font-weight: 600;
+  border-bottom: 5px solid #005A8F;
+  padding: 1%;
+}
+/* map */
+
+
+
+.map-main{
+  position: relative;
+  background-color: #005A8F;
+  width: 100%;
+  height: 713px;
+  display: flex;
+  padding: 2%;
+
+}
+.map-content {
+  width: 100%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.map-content-text{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+
+
+.map-content h1 {
+  color: white;
+  font-family: Inter;
+  font-size: 60px;
+  padding-bottom: 25%;
+
+}
+
+.map-content p{
+  color: white;
+  font-family: Inter;
+  font-size: 3vh;
+  padding-bottom: 5%;
+
+}
+
+.map-list{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.map-list a{
+  padding: 2%;
+  color: white;
+  font-family: Inter;
+  font-size: 2vh;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+
+.map-list a.is-active{
+  background-color: #0997e9;
+}
+
+.map-content svg{
+  width: 100%;
+  max-width: 715px;
+  height: 100%;
+  max-height: 619px;
+}
+
+.map-content svg g a{
+  fill:#ffffff;
+  fill-opacity:1;
+  stroke:#b9b9b9;
+  stroke-width:200;
+  stroke-opacity:1;
+
+}
+
+.map-content svg g .remove-from-map{
+  fill:#b9b9b9;
+  stroke:#b9b9b9;
+  stroke-width:200;
+  pointer-events: none;
+
+}
+
+.map-content svg g :not(.remove-from-map) polygon:hover, svg g :not(.remove-from-map) path:hover {
+  fill: #0997e9;
+}
+
+.map-content .is-active polygon,.is-active path {
+  fill: #0997e9;
+}
+
+/* accueil-actu-main */
+
+.accueil-actu-main{
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  margin-bottom: 3%;
+}
+.accueil-actu-title{
+  position: absolute;
+  color: #005A8F;
+  font-family: Inter;
+  font-size: 8vw;
+  top: 7%;
+  left: 11%;
+}
+
+.accueil-actu-video{
+  position: absolute;
+  width: 54%;
+  height: auto;
+  top: 8%;
+  left: 39%;
+
+}
+.accueil-actu-video video{
+  width: 100%;
+  border-radius: 50px;
+  border: 5px solid #005A8F;
+}
+
+.accueil-actu-message{
+  position: absolute;
+  background-color: #005A8F;
+  width: 40%;
+  height: 58%;
+  border-radius: 50px;
+  top: 32%;
+  left: 5%;
+}
+.accueil-actu-message p{
+  color: white;
+  font-family: Inter;
+  font-size: 1.5vw;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+
+}
+ 
+/* newsletter */
+
+.newsletter-main {
+  width: 100%;
+  max-width: 1300px;
+  height: 400px;
+  border: 5px solid #005A8F;
+  margin: auto;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-content p{
+  color: #005A8F;
+  text-align: center;
+  font-family: Inter;
+  font-size: 5vh;
+  padding-bottom: 10%;
+}
+
+.newsletter-content button{
+  width: 100%;
+  height: 84px;
+  border-radius: 10px;
+  font-family: Inter;
+  font-size: 4vh;
+  border: 1px solid #C80000;
+  color: white;
+  background-image: linear-gradient(to left, #C80000 50%, #ffffff 50%);
+  background-size: 205% 100%;
+  background-position: 100%; 
+  transition: background-position 0.5s;
+}
+
+.newsletter-content button:hover{
+  color: #C80000;
+  background-position: 0%;
+}
+/* partenaire */
+
+.partenaire-main{
+  background-color: #D9D9D9;
+  width: 100%;
+  height: 300px;
+}
+
+.partenaire-main h2{
+  text-align: center;
+  color: #000;
+  font-family: inter;
+  font-size: 35px;
+  padding-top: 1%;
+}
+
+.partenaire-img{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.partenaire-img img {
+  width: 100%;
+  max-width: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* map */
+
+  .map-content {
+    flex-direction: column;
+    padding: 2%;
+  }
+
+  .map-content h1 {
+    position: relative;
+    margin: 0;
+    font-size: 4.5vh;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  .map-content p {
+    font-size: 2vh;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
+  .map-list a{
+    font-size: 1.5vh;
+    text-align: center;
+
+
+  }
+  .map-content svg {
+    margin-top: 5%;
+    width: 100%;
+  }
+
+  /* losange */
+
+  .losange-main {
+    flex-wrap: wrap;
+    align-items: center; 
+  }
+  .cube-losange{
+    margin: 45px;
+  }
+  .losange {
+    width: 75px;
+    height: 75px;
+  }
+  .losange img {
+    max-width: 80%;
+  }
+  .losange-text {
+    margin-bottom: 40px;
+  }
+
+  .losange-text p {
+    font-size: 20px;
+  }
+  /* accueil-actu */
+
+  .accueil-actu-main{
+    height: 60vh;
+  }
+
+  .accueil-actu-title{
+    font-size: 7vh;
+    top: 4%;
+  }
+  .accueil-actu-video{
+    width: 77%;
+    top: 41%;
+    left: 18%;
+  }
+  
+  .accueil-actu-message{
+    width: 57%;
+    height: 32%;
+    top: 16%;
+    left: 7%;
+  }
+  .accueil-actu-message p{
+    margin-top: 5%;
+    margin-left: 7%;
+    max-height: 25px;
+    font-size: 1.1vh;
+    padding: 2%;
+
+  }
+  /* newsletter */
+  .newsletter-main{
+    width: 95%;
+    padding: 10px; 
+  }
+
+  .newsletter-content {
+    text-align: center; 
+  }
+  
+  .newsletter-content p{
+    font-size: 4.5vh;
+  }
+
+  .newsletter-content button {
+    font-size: 3vh;
+    margin-top: 10px;
+  }
+
+  .partenaire-main {
+    flex-wrap: wrap;
+  }
+
+  .partenaire-main h2 {
+    font-size: 28px; /* Ajustez la taille de la police pour les téléphones */
+  }
+
+  .partenaire-img {
+    margin-top: 8%;
+    width: 100%;    
+  }
+  .partenaire-img img{
+    max-width: 100px;
+    
+  }
+}

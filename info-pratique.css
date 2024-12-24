@@ -1,0 +1,432 @@
+/* Import de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Amélioration du défilement */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Styles communs pour les sections */
+
+
+
+.info, .com, .faq footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styles de titre de section */
+section .titre {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section .titre::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #4399CC;
+    transform: translateX(-50%);
+}
+
+section .titre::after {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(147, 143, 143);
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/********** Styles de la section "info" **********/
+.info {
+    color: #fff;
+    background: #4399CC;
+    padding: 100px 0;
+}
+
+.info .info-content .card {
+    width: calc(33% - 20px);
+    background: #005A8F;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.info .info-content .card:hover {
+    background: rgb(147, 143, 143);
+}
+
+.info .info-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.info .info-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.info .info-content .card i {
+    font-size: 50px;
+    color: rgb(147, 143, 143);
+    transition: color 0.3s ease;
+}
+
+.info .info-content .card:hover i {
+    color: #fff;
+}
+
+.info .info-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* Styles de la section "carousel" dans "info" */
+.info .carousel .card {
+    background: #005A8F;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.info .carousel .card:hover {
+    background: rgb(171, 171, 171);
+}
+
+.info .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.info .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.info .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: #fff;
+}
+
+.info .carousel a {
+    text-decoration: none;
+}
+
+.info .carousel .card img {
+    height: 200px;
+    width: 300px;
+    
+}
+
+
+
+/* Styles du carrousel Owl Dots */
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid rgb(171, 171, 171) !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: rgb(171, 171, 171) !important;
+}
+
+
+
+/*************Styles de la section "com" **************/
+
+.com {
+    color: #fff;
+    background: #4399CC;
+    padding: 100px 0;
+}
+
+.com .com-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.com .com-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.com .com-content .row i {
+    font-size: 25px;
+    color: rgb(171, 171, 171);
+}
+
+.com .com-content .info .soustitre {
+    color: #333;
+}
+
+.com .center form .cases {
+    display: flex;
+}
+
+.com .center form .case,
+.com .center form .cases .case {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.com .center form .textarea {
+    height: 80px;
+    width: 100%;
+}
+
+.com .center form .nom {
+    margin-right: 10px;
+}
+
+.com .center form .case input,
+.com .center form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.com .center form .case input:focus,
+.com .center form .textarea textarea:focus {
+    border-color: #b3b3b3;
+}
+
+.com .center form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+.com .center form .button-area {
+    display: flex;
+    align-items: center;
+}
+
+.center form .button-area button {
+    color: #fff;
+    display: block;
+    width: 160px !important;
+    height: 45px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    background: #005A8F;
+    border: 2px solid rgb(171, 171, 171);
+    transition: all 0.3s ease;
+}
+
+.center form .button-area button:hover {
+    color: rgb(171, 171, 171);
+    background: none;
+}
+
+
+
+
+/**************** Styles de la section "faq" ***************/
+.faq {
+    padding: 100px 0;
+    position: relative;
+    background: #fff;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+/* Styles pour l'accordéon (accordion) */
+.accordion {
+    position: relative;
+    width: 100%; 
+    margin-left: 5%; 
+}
+
+
+.titre {
+    margin-top: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content-accordion {
+    margin-top: 35px;
+    margin-right: 5%; 
+}
+
+.question-reponse {
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion-img {
+    position: relative;
+    width: 100%; 
+    margin-bottom: 5%; 
+}
+
+.titre-question {
+    margin: 1.4rem 0rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+}
+
+.question-btn {
+    font-size: 1.5rem;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.up-icon {
+    display: none;
+}
+
+.reponse {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    display: none;
+}
+
+.show-text .reponse {
+    display: block;
+}
+
+.show-text .up-icon {
+    display: inline;
+}
+
+.show-text .down-icon {
+    display: none;
+}
+
+.reponse {
+    display: none;
+}
+
+.up-icon {
+    display: inline-block;
+}
+
+.down-icon {
+    display: none;
+}
+
+.question-reponse.active .reponse {
+    display: block;
+}
+
+.question-reponse.active .up-icon {
+    display: none;
+}
+
+.question-reponse.active .down-icon {
+    display: inline-block;
+}
+
+/**************** Styles pour les écrans larges ***************/
+@media screen and (min-width: 992px) {
+    .faq {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center; 
+    }
+
+    .accordion {
+        width: 70%; 
+        margin-left: 5%; 
+        
+    }
+
+    .accordion-img {
+        max-width: 75%; 
+        width: 70%;
+        position: relative;
+    }
+
+    .question-reponse {
+        width: 60%; 
+    }
+
+    .content-accordion {
+        margin-top: 0; 
+    }
+
+    .titre {
+        font-size: 3rem;
+        margin-top: 50px;
+    }
+}
+
+
+/***************Styles pour les petits écrans (responsive) ***************/
+@media (max-width: 500px) {
+    .com .center form .cases {
+        flex-direction: column;
+    }
+    .com .center form .nom,
+    .com .center form .email {
+        margin: 0;
+    }
+    .center form .error-box {
+        width: 150px;
+    }
+}
+
+

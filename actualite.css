@@ -1,0 +1,196 @@
+
+
+#paysage_actu {
+    width: 100%; /* 100% de la largeur de la page */
+    max-height: 400px; /* Hauteur maximale de 400px */
+}
+
+.container {
+    position: relative; /* Position relative pour les éléments enfants positionnés absolument */
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.container img{
+    border-bottom: 5px solid #005A8F;
+}
+
+.actu img {
+    max-width: 100%; /* Assurez-vous que l'image ne dépasse pas la largeur du conteneur */
+    max-height: 100%; /* Assurez-vous que l'image ne dépasse pas la hauteur du conteneur */
+}
+
+
+.h1_actu {
+    position: absolute; /* Position absolue pour superposer le titre */
+    top: 91%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Centre correctement le contenu */
+    background-color: #ffffff; /* Fond blanc pour le titre */
+    padding: 40px; /* Marge intérieure pour le titre */
+    padding-left: 8%;
+    padding-right: 8%;
+    border: 3px solid #005A8F;
+
+   
+    
+}
+
+.h1_actu h1 {
+
+    font-size: 300%;
+    font-family: Inter;
+}
+
+/* .hr_actu {
+    height: 0.6em;
+    background-color :#000000; 
+    margin-left: 4%;
+    text-align: center;
+    width: 7%;
+    margin: 0 auto; 
+} */
+
+
+.main_actu {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    
+    display: flex; /* Définit la boîte flexible (conteneur) pour les enfants de l'élément de classe "main_actu" */
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permet aux enfants de l'élément de classe "main_actu" de passer à la ligne lorsque l'espace est insuffisant */
+    
+    
+}
+
+
+.actu {
+    max-width: 40%;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    
+    
+}
+
+figure {
+	width: 100%;
+	max-height: 400px;
+	overflow: hidden; /* Masquer tout contenu qui dépasse les limites de l'élément figure */
+    
+}
+
+#actu-img{
+    width: 100%; /* Largeur */
+	height: 100%;
+}
+
+.actu-date {
+
+    font-size: 80%;
+    font-style: italic;
+    margin: auto;
+    /* margin-left: 10%; */
+    
+}
+
+.h2_actu {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    font-size: 100%;
+    /* margin-left: 10%; */
+}
+
+
+.actu-text {
+    font-size: 100%;
+    max-width: 75%;
+    /* margin-left: 10%; */
+}
+
+
+
+
+.actu img {
+	-webkit-transform: scale(1); /* Transition pour la transformation à l'échelle pour les navigateurs Webkit (comme Chrome et Safari)*/
+	transform: scale(1); /* Transition pour la transformation à l'échelle*/
+	-webkit-transition: .3s ease-in-out; /* Durée de la transition et type d'accélération pour les navigateurs Webkit (comme Chrome et Safari) */
+	transition: .3s ease-in-out; /* Durée de la transition et type d'accélération pour les autres navigateurs */
+}
+
+
+
+.actu:hover img {
+    -webkit-transform: scale(1.1); /* Transformation à l'échelle lorsque la souris survole (échelle de 1.1) pour les navigateurs Webkit */
+	transform: scale(1.1); /* Transformation à l'échelle lorsque la souris survole (échelle de 1.1) pour les autres navigateurs */
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+    #paysage_actu {
+        width: 100%; /* 100% de la largeur de la page */
+        
+    }
+
+
+    .h1_actu {
+        padding: 25px; /* Marge intérieure pour le titre */
+        font-size: 50%; 
+        
+    }
+
+    .container img{
+        border-bottom: 3px solid #005A8F;
+    }
+
+    .main_actu {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        
+        display: flex; /* Définit la boîte flexible (conteneur) pour les enfants de l'élément de classe "main_actu" */
+        flex-direction: column; /* Permet aux enfants de l'élément de classe "main_actu" de passer à la ligne lorsque l'espace est insuffisant */
+        
+        
+    }
+    
+    
+    .actu {
+        max-width: 90%;
+        margin-top: 3%;
+
+
+    }
+
+    figure {
+        width: 100%;
+        height: 75%;
+        margin-left: 0;
+    }
+    
+
+    .actu-date {
+        display: none;
+    }
+
+    .h2_actu {
+        margin-left: 0;
+        font-size: 70%; 
+    }
+
+    .actu-text {
+        display: none;
+    }
+}
